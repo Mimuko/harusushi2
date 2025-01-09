@@ -1,0 +1,163 @@
+---
+import '../styles/reset.css';
+import '../styles/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/recruit.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "求人情報｜春寿し";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <div class="content">
+        <div class="pageHeader">
+            <div class="pageHeaderImg">
+                <img src="https://haruzushi.com/system_panel/uploads/images/20240430145952844657.png" alt="" width="1440" height="325" class="img" />
+            </div>
+            <div class="pageHeaderHead">
+                <h1 class="pageHeaderHeadTxt">求人情報
+                </h1>
+            </div>
+        </div>
+        <div class="decoration">
+            <img src="https://haruzushi.com/system_panel/uploads/images/20240426173405169843.png" alt="装飾用のイメージ画像" width="232" height="233" class="decorationImg" />
+            <img src="https://haruzushi.com/system_panel/uploads/images/20240426173405169843.png" alt="装飾用のイメージ画像" width="232" height="233" class="decorationImg" />
+            <div class="section">
+                <div id="atmosphere" class="recruitRow flex">
+                    <div class="imgBox">
+                        <img src="https://haruzushi.com/system_panel/uploads/images/20240427163836623675.png" alt="お料理（寿司）のイメージ画像" width="533" height="421" class="img" />
+                    </div>
+                    <div class="txtBox">
+                        <h2 class="txtBoxTtl">春寿しでは現在、
+                            <br />従業員を募集しております。
+                        </h2>
+                        <p class="txt">
+                            春寿しでは、一緒に働いてくれる仲間を募集しております。
+                            <br />
+                            採用にあたり、学歴のほか経験の有無もいっさい不問です！
+                            <br />
+                            初めての方でも、丁寧に指導しますのでご安心ください。
+                            <br />
+                        </p>
+                        <p class="txt">
+                            詳細は直接案内させていただきますので、少しでもご興味がございましたらお気軽にお問い合わせください。
+                        </p>
+                    </div>
+                </div>
+                <div class="imgContent">
+                    <div class="box">
+                        <img src="https://haruzushi.com/system_panel/uploads/images/20240427163836114639.png" alt="お料理（寿司）のイメージ画像" width="395" height="220" class="img" />
+                    </div>
+                    <div class="box">
+                        <img src="https://haruzushi.com/system_panel/uploads/images/20240427163836684651.png" alt="お料理（寿司）のイメージ画像" width="395" height="220" class="img" />
+                    </div>
+                    <div class="box">
+                        <img src="https://haruzushi.com/system_panel/uploads/images/20240427163836751854.png" alt="お料理（寿司）のイメージ画像" width="395" height="220" class="img" />
+                    </div>
+                </div>
+            </div>
+            <div id="requirements" class="section">
+                <h2 class="bottomLineTtl">募集要項
+                </h2>
+                <div class="flexTable">
+                    <div class="flexTableHead">
+                        <p class="txt">お仕事の内容
+                        </p>
+                    </div>
+                    <div class="flexTableBody">
+                        <p class="txt">オーダー取り・料理や飲み物の提供・ドリンク作り・レジ対応・後片付けなど、ホール業務全般や洗い物などをお任せします。
+                        </p>
+                    </div>
+                </div>
+                <div class="flexTable">
+                    <div class="flexTableHead">
+                        <p class="txt">雇用形態
+                        </p>
+                    </div>
+                    <div class="flexTableBody middle">
+                        <p class="txt">パート
+                        </p>
+                    </div>
+                </div>
+                <div class="flexTable">
+                    <div class="flexTableHead">
+                        <p class="txt">応募資格
+                        </p>
+                    </div>
+                    <div class="flexTableBody middle">
+                        <p class="txt">なし
+                        </p>
+                    </div>
+                </div>
+                <div class="flexTable">
+                    <div class="flexTableHead">
+                        <p class="txt">就業時間
+                        </p>
+                    </div>
+                    <div class="flexTableBody">
+                        <p class="txt">ランチ：11:30-14:00
+                            <br />
+                            ディナー:17:30-21:00 ※週３日～OK
+                            <br />※ご家庭の都合なども前日までに申告いただければ柔軟に対応します
+                        </p>
+                    </div>
+                </div>
+                <div class="flexTable">
+                    <div class="flexTableHead">
+                        <p class="txt">勤務地
+                        </p>
+                    </div>
+                    <div class="flexTableBody middle">
+                        <p class="txt">福岡県北九州市八幡西区鷹見台2丁目２－１
+                        </p>
+                    </div>
+                </div>
+                <div class="flexTable">
+                    <div class="flexTableHead">
+                        <p class="txt">待遇・福利厚生
+                        </p>
+                    </div>
+                    <div class="flexTableBody">
+                        <p class="txt">◆社会保険有（法令に則り適用）
+                            <br />
+                            ◆制服貸与
+                        </p>
+                    </div>
+                </div>
+                <div class="flexTable">
+                    <div class="flexTableHead">
+                        <p class="txt">
+                        </p>
+                        応募方法
+                    </div>
+                    <div class="flexTableBody">
+                        <p class="txt">下記の電話番号までお気軽にお問い合わせください。
+                            <br />
+                            電話番号：
+                            <a href="tel:0936027326" class="link">093-602-7326</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+---
+import '../styles/reset.css';
+import '../styles/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/menu.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "メニュー｜春寿し";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <div class="content">
+        <div class="pageHeader">
+            <div class="pageHeaderImg">
+                <img src="https://haruzushi.com/system_panel/uploads/images/20240430145952392923.png" alt="背景用の画像"
+                    width="1440" height="321" class="img" />
+            </div>
+            <div class="pageHeaderHead">
+                <h1 class="pageHeaderHeadTxt">メニュー
+                </h1>
+            </div>
+        </div>
+        <div class="decoration">
+            <img src="https://haruzushi.com/system_panel/uploads/images/20240426135428346532.png" alt="装飾用のイメージ画像"
+                width="292" height="200" class="decorationImg" />
+            <img src="https://haruzushi.com/system_panel/uploads/images/20240426135629710231.png" alt="装飾用のイメージ画像"
+                width="358" height="248" class="decorationImg" />
+            <div class="section">
+                <h2 class="secondTtl">お昼メニュー
+                </h2>
+                <h3 class="bottomLineTtl">小春御膳
+                </h3>
+                <div class="flex">
+                    <div class="box">
+                        <p class="txt priceTxt">２,500円
+                        </p>
+                        <img src="https://haruzushi.com/system_panel/uploads/images/20240426135428828797.png"
+                            alt="小春御膳 2500円のお料理イメージ画像" width="486" height="348" class="img" />
+                    </div>
+                    <div class="box">
+                        <p class="txt priceTxt">3,700円
+                        </p>
+                        <img src="https://haruzushi.com/system_panel/uploads/images/20240426135428132381.png"
+                            alt="小春御膳 3700円のお料理イメージ画像" width="486" height="348" class="img" />
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="secondTtl">料理メニュー
+                </h2>
+                <div class="menuImg">
+                    <div class="box">
+                        <img src="https://haruzushi.com/system_panel/uploads/images/20240426135428563018.png"
+                            alt="お料理のイメージ画像その1" width="340" height="291" class="img" />
+                    </div>
+                    <div class="box">
+                        <img src="https://haruzushi.com/system_panel/uploads/images/20240426135428361854.png"
+                            alt="お料理のイメージ画像その2" width="340" height="291" class="img" />
+                    </div>
+                    <div class="box">
+                        <img src="https://haruzushi.com/system_panel/uploads/images/20240426135428167153.png"
+                            alt="お料理のイメージ画像その3" width="340" height="291" class="img" />
+                    </div>
+                </div>
+                <div class="menuListBox">
+                    <div class="menuList">
+                        <p class="txt">特上にぎり8貫（お吸い物付き）
+                        </p>
+                        <p class="txt">3,850円
+                        </p>
+                        <p class="txt">松にぎり7貫（お吸い物付き）
+                        </p>
+                        <p class="txt">2,650円
+                        </p>
+                        <p class="txt">竹にぎり7貫
+                        </p>
+                        <p class="txt">2,000円
+                        </p>
+                        <p class="txt">梅にぎり7貫
+                        </p>
+                        <p class="txt">1,450円
+                        </p>
+                        <p class="txt">穴子一本握り（対馬産）
+                        </p>
+                        <p class="txt">1,400円
+                        </p>
+                        <p class="txt">穴子押し寿し
+                        </p>
+                        <p class="txt">1,200円
+                        </p>
+                        <p class="txt">えび押し寿し
+                        </p>
+                        <p class="txt">1,200円
+                        </p>
+                        <p class="txt">鉄火巻き（細巻き）
+                        </p>
+                        <p class="txt">990円
+                        </p>
+                        <p class="txt">白身巻き（細巻き）
+                        </p>
+                        <p class="txt">990円
+                        </p>
+                        <p class="txt">エビマヨ巻き（細巻き）
+                        </p>
+                        <p class="txt">990円
+                        </p>
+                        <p class="txt">穴子巻き（細巻き）
+                        </p>
+                        <p class="txt">990円
+                        </p>
+                        <p class="txt">サラダ巻き（細巻き）
+                        </p>
+                        <p class="txt">660円
+                        </p>
+                        <p class="txt">梅山芋巻き（細巻き）
+                        </p>
+                        <p class="txt">660円
+                        </p>
+                        <p class="txt">納豆巻き（細巻き）
+                        </p>
+                        <p class="txt">550円
+                        </p>
+                        <p class="txt">たまご巻き（細巻き）
+                        </p>
+                        <p class="txt">550円
+                        </p>
+                        <p class="txt">新香巻き（細巻き）
+                        </p>
+                        <p class="txt">550円
+                        </p>
+                        <p class="txt">カッパ巻き（細巻き）
+                        </p>
+                        <p class="txt">550円
+                        </p>
+                        <p class="txt">海鮮太巻き
+                        </p>
+                        <p class="txt">1,650円
+                        </p>
+                        <p class="txt">サラダ太巻き
+                        </p>
+                        <p class="txt">900円
+                        </p>
+                    </div>
+                    <div class="menuList">
+                        <p class="txt">巻き寿し
+                        </p>
+                        <p class="txt">660円
+                        </p>
+                        <p class="txt">松ちらし
+                        </p>
+                        <p class="txt">3,000円
+                        </p>
+                        <p class="txt">竹ちらし
+                        </p>
+                        <p class="txt">2,000円
+                        </p>
+                        <p class="txt">刺身盛り合わせ(八種盛り)
+                        </p>
+                        <p class="txt">3,300円
+                        </p>
+                        <p class="txt">刺身盛り合わせ(四種盛り)
+                        </p>
+                        <p class="txt">1,650円
+                        </p>
+                        <p class="txt">サザエ刺身
+                        </p>
+                        <p class="txt">700円
+                        </p>
+                        <p class="txt">海鮮生春巻き
+                        </p>
+                        <p class="txt">1,300円
+                        </p>
+                        <p class="txt">げそ塩焼き
+                        </p>
+                        <p class="txt">850円
+                        </p>
+                        <p class="txt">げそバター焼き
+                        </p>
+                        <p class="txt">850円
+                        </p>
+                        <p class="txt">なすチーズ焼き
+                        </p>
+                        <p class="txt">800円
+                        </p>
+                        <p class="txt">サザエつぼ焼き 1個
+                        </p>
+                        <p class="txt">750円
+                        </p>
+                        <p class="txt">パイ包み焼き 2個
+                        </p>
+                        <p class="txt">900円
+                        </p>
+                        <p class="txt">アボカドグラタン
+                        </p>
+                        <p class="txt">750円
+                        </p>
+                        <p class="txt">エビしゅうまい
+                        </p>
+                        <p class="txt">1,100円
+                        </p>
+                        <p class="txt">イカしゅうまい
+                        </p>
+                        <p class="txt">1,100円
+                        </p>
+                        <p class="txt">茶碗蒸し
+                        </p>
+                        <p class="txt">660円
+                        </p>
+                        <p class="txt">鯛あら炊き
+                        </p>
+                        <p class="txt">1,650円
+                        </p>
+                        <p class="txt">げその甘辛煮
+                        </p>
+                        <p class="txt">900円
+                        </p>
+                        <p class="txt">じゃがいもパリパリサラダ
+                        </p>
+                        <p class="txt">900円
+                        </p>
+                        <p class="txt">自家製ぜんざい（季節限定12～3月）
+                        </p>
+                        <p class="txt">500円
+                        </p>
+                        <p class="txt">アイスクリーム
+                        </p>
+                        <p class="txt">450円
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="overlapImg">
+                    <div class="overlapImgTop">
+                        <div class="box">
+                            <img src="https://haruzushi.com/system_panel/uploads/images/20240426135428961557.png"
+                                alt="お料理のイメージ画像" width="400" height="300" class="img" />
+                        </div>
+                        <div class="box">
+                            <img src="https://haruzushi.com/system_panel/uploads/images/20240426135428644955.png"
+                                alt="お料理のイメージ画像" width="400" height="300" class="img" />
+                        </div>
+                    </div>
+                    <div class="overlapImgBottom">
+                        <div class="box">
+                            <img src="https://haruzushi.com/system_panel/uploads/images/20240426135428436347.png"
+                                alt="お料理のイメージ画像" width="400" height="300" class="img" />
+                        </div>
+                        <div class="box">
+                            <img src="https://haruzushi.com/system_panel/uploads/images/20240426135428950211.png"
+                                alt="お料理のイメージ画像" width="400" height="300" class="img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

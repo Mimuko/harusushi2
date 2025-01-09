@@ -1,0 +1,165 @@
+---
+import '../styles/reset.css';
+import '../styles/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/store.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "店舗概要｜春寿し";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <div class="content">
+        <div class="pageHeader">
+            <div class="pageHeaderImg">
+                <img src="https://haruzushi.com/system_panel/uploads/images/20240430100651453860.png" alt="背景用の画像"
+                    width="1440" height="325" class="img" />
+            </div>
+            <div class="pageHeaderHead">
+                <h1 class="pageHeaderHeadTxt">店舗概要
+                </h1>
+            </div>
+        </div>
+        <div class="decoration">
+            <img src="https://haruzushi.com/system_panel/uploads/images/20240426173405169843.png" alt="装飾用のイメージ画像"
+                width="232" height="233" class="decorationImg" />
+            <img src="https://haruzushi.com/system_panel/uploads/images/20240426173405169843.png" alt="装飾用のイメージ画像"
+                width="232" height="233" class="decorationImg" />
+            <div class="section">
+                <h2 class="mainTtl">代表挨拶
+                </h2>
+                <div class="storeRow flex">
+                    <div class="imgBox">
+                    </div>
+                    <div class="txtBox">
+                        <p class="txt">
+                            春寿しのホームページをご覧いただきまして、誠にありがとうございます。
+                            <br />客様から[美味しかった]とか[幸せ]という言葉が聞けたら、スタッフ一同、笑顔になれますし達成感が得られます。
+                            <br />これからも、お客様に喜んで頂けるように精進し、お客様の笑顔がみれるよう初心の気持ちを忘れずに努力していきたいと思います。
+                        </p>
+                        <p class="txt">
+                            お客様に喜んで頂き、お客様の笑顔を励みにスタッフ一同、料理に笑顔で取り組めたら、とても幸せです。
+                        </p>
+                        <p class="txt ownerName">春寿し　木村和徳
+                        </p>
+                    </div>
+                </div>
+                <div class="imgContent">
+                    <div class="box">
+                        <img src="https://haruzushi.com/system_panel/uploads/images/20240428101412953206.png"
+                            alt="春寿し 店舗外観の写真" width="584" height="298" class="img" />
+                    </div>
+                    <div class="box">
+                        <img src="https://haruzushi.com/system_panel/uploads/images/20240426173405196024.png"
+                            alt="職人が寿司を握るイメージ画像" width="584" height="298" class="img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="info" class="sectionBg">
+            <div class="sectionBgImg">
+                <img src="https://haruzushi.com/system_panel/uploads/images/20240428101412123439.png" alt="背景用の画像"
+                    width="1440" height="794" class="img" />
+            </div>
+            <address class="sectionBgBox">
+                <h2 class="sectionBgTtl">運営
+                </h2>
+                <div class="flexTable">
+                    <div class="flexTableHead">
+                        <p class="txt">名称
+                        </p>
+                    </div>
+                    <div class="flexTableBody middle">
+                        <p class="txt">春寿し
+                        </p>
+                    </div>
+                </div>
+                <div class="flexTable">
+                    <div class="flexTableHead">
+                        <p class="txt">住所
+                        </p>
+                    </div>
+                    <div class="flexTableBody middle">
+                        <p class="txt">〒807-0853 福岡県北九州市八幡西区鷹見台2丁目2-1
+                        </p>
+                    </div>
+                </div>
+                <div class="flexTable">
+                    <div class="flexTableHead">
+                        <p class="txt">TEL
+                        </p>
+                    </div>
+                    <div class="flexTableBody">
+                        <a href="tel:0936027326" class="link">
+                            <p class="txt">093-602-7326
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="flexTable">
+                    <div class="flexTableHead">
+                        <p class="txt">代表
+                        </p>
+                    </div>
+                    <div class="flexTableBody middle">
+                        <p class="txt">木村和徳
+                        </p>
+                    </div>
+                </div>
+                <div class="flexTable">
+                    <div class="flexTableHead">
+                        <p class="txt">定休日
+                        </p>
+                    </div>
+                    <div class="flexTableBody">
+                        <p class="txt">水曜日（水曜日が祝日の場合は営業し、翌日休日となります）
+                        </p>
+                    </div>
+                </div>
+            </address>
+        </div>
+        <div class="section">
+            <div class="imgContent column3">
+                <div class="box">
+                    <img src="https://haruzushi.com/system_panel/uploads/images/20240427163836114639.png" alt=""
+                        width="395" height="219" class="img" />
+                </div>
+                <div class="box">
+                    <img src="https://haruzushi.com/system_panel/uploads/images/20240427163836684651.png" alt=""
+                        width="395" height="219" class="img" />
+                </div>
+                <div class="box">
+                    <img src="https://haruzushi.com/system_panel/uploads/images/20240427163836751854.png" alt=""
+                        width="395" height="219" class="img" />
+                </div>
+            </div>
+            <div id="map" class="imgBox googleMap">
+                <div src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.909379186007!2d130.7217470757073!3d33.840447573237434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543ce99b315da2b%3A0x99570965bbb3a7e7!2z5pil5a-_44GX!5e0!3m2!1sja!2sjp!4v1714110276357!5m2!1sja!2sjp"
+                    class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.909379186007!2d130.7217470757073!3d33.840447573237434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543ce99b315da2b%3A0x99570965bbb3a7e7!2z5pil5a-_44GX!5e0!3m2!1sja!2sjp!4v1714110276357!5m2!1sja!2sjp"
+                        width="400" height="300" loading="lazy" id="iadnw4" class="gjs-no-pointer c3221"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

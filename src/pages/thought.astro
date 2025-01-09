@@ -1,0 +1,147 @@
+---
+import '../styles/reset.css';
+import '../styles/common.css';
+import '../styles/header.css';
+import '../styles/footer.css';
+import '../styles/thought.css';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "店主の想い｜春寿し";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <div class="content">
+        <div class="pageHeader">
+            <div class="pageHeaderImg">
+                <img src="https://haruzushi.com/system_panel/uploads/images/20240430145952239201.png" alt="背景用の画像" width="1440" height="325" class="img" />
+            </div>
+            <div class="pageHeaderHead">
+                <h1 class="pageHeaderHeadTxt">店主の想い
+                </h1>
+            </div>
+        </div>
+        <div class="decoration">
+            <img src="https://haruzushi.com/system_panel/uploads/images/20240426173405169843.png" alt="装飾用のイメージ画像" width="232" height="233" class="decorationImg" />
+            <div class="section mainSection">
+                <h2 id="cooking" class="mainTtl">お寿司の奥深い味わい
+                </h2>
+                <p class="txt">お寿司の奥深い味わいは、単に食べ物を超えた深い満足感を提供します。
+                    <br />
+                    各一貫が持つ独特の風味は、素材の鮮度と職人の繊細な技によって引き出されます。
+                    <br />
+                    新鮮な魚介類の潤い、シャリの微妙な甘み、そしてわずかに感じるワサビの辛みが
+                    <br />
+                    絶妙に絡み合い、一口ごとに異なる驚きを提供します。
+                </p>
+                <img src="https://haruzushi.com/system_panel/uploads/images/20240426173405728074.png" alt="お料理（寿司）のイメージ画像" width="800" height="412" class="img mainImg" />
+                <div class="sectionInr">
+                    <div class="flex reverse">
+                        <div class="txtBox">
+                            <h3 class="txtBoxTtl">心を込めて握るお寿司
+                            </h3>
+                            <p class="txt">お寿司一つ一つに握る職人の心が宿ります。
+                                <br />
+                                その心遣いと技術は、選ばれた食材の本質を引き出し、その寿司が語る物語を生み出します。
+                            </p>
+                            <p class="txt">ひとつひとつの寿司が持つ独自の風味や食感、それに寄り添う優しい手の動きは、食べる人の心に静かに語りかけます。
+                                <br />
+                                選び抜かれた素材への敬意と、それを最大限に活かすための緻密な技術があります。
+                                <br />
+                                握り一つ一つから伝わる温もりは、食べる人の心に深く響き、記憶に残る味わいになります。
+                            </p>
+                        </div>
+                        <div class="imgBox">
+                            <img src="https://haruzushi.com/system_panel/uploads/images/20240426173405351193.png" alt="お料理（寿司）のイメージ画像" width="500" height="340" class="img" />
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="txtBox">
+                            <h3 class="txtBoxTtl">あなごの一本握りによる笑顔
+                            </h3>
+                            <p class="txt">
+                                あなごの一本握りがもたらすのは、ただの美味しさだけではありません。
+                                <br />
+                                それは、ふっくらとしたあなごが口の中でとろける瞬間、日々の疲れが癒され、心がほどけるような感覚です。
+                                <br />
+                                この一皿に込められた職人の技と心遣いが、見る人、食べる人を笑顔に変えていくのです。
+                                <br />
+                                あなごの繊細な味わいと共に、手間ひまかけて育てられたこの一品が、食卓を囲む人々の間に温かな会話を生み出し、つながりを深めていきます。
+                            </p>
+                        </div>
+                        <div class="imgBox">
+                            <img src="https://haruzushi.com/system_panel/uploads/images/20240426173405588681.png" alt="" width="475" height="323" class="img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentBox sectionBg">
+            <img src="https://haruzushi.com/system_panel/uploads/images/20240426173405169843.png" alt="装飾用のイメージ画像" width="232" height="233" class="decorationImg" />
+            <div class="sectionBgImg">
+                <img src="https://haruzushi.com/system_panel/uploads/images/20240426173405844197.png" alt="背景用の画像" width="1440" height="1814" class="img" />
+            </div>
+            <div id="career" class="section secondSection">
+                <h2 class="secondTtl">お客様に喜んでもらうため
+                    <br />先代から思いを大切に
+                    <br class="pcHidden" />受け継いでいきたい
+                </h2>
+                <div class="sectionInr">
+                    <div class="overlapTxt">
+                        <div class="imgBox">
+                            <img src="https://haruzushi.com/system_panel/uploads/images/20240426173405520914.png" alt="お料理（寿司）のイメージ画像" width="892" height="387" class="img" />
+                        </div>
+                        <div class="txtBox">
+                            <p class="txt">先代の父親が昭和50年に開業した「味処　春寿し」。 父が寿司を握る姿がかっこいいと思っていました。
+                                ただ先代と母は、お店を継ぐことは大反対されました。
+                                <br />
+                                ただ、お店を受け継ぎたいという気持ちが強く、大阪の飲食店で4年修行し、技術や職人としての心得を学びました。
+                                飲食店で就業する中で両親が反対する気持ちがわかりましたが、同時に厳しい分、喜びも大きいことをしりました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="overlapTxt reverse">
+                        <div class="imgBox">
+                            <img src="https://haruzushi.com/system_panel/uploads/images/20240427161344495484.png" alt="" width="892" height="387" class="img" />
+                        </div>
+                        <div class="txtBox">
+                            <p class="txt">
+                                先代が病に倒れ、板場に立てなくなりました。まだ、2代目である私は、22歳と若く、何の心構えもない状態でお店を継ぐことになりました。最初は先代と比べられキツかったのと同時に父である先代の仕事に対する姿勢を改めて感じることができました。
+                                <br />
+                                お客様に喜んでもらうためにという気持ちをしっかり受け継ぎました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="overlapTxt">
+                        <div class="imgBox">
+                            <img src="https://haruzushi.com/system_panel/uploads/images/20240426173405103107.png" alt="お料理（寿司）のイメージ画像" width="892" height="387" class="img" />
+                        </div>
+                        <div class="txtBox">
+                            <p class="txt">お客様にさらに喜んでもらうためにお店をリニューアルいたしました。
+                                <br>お寿司屋さんの味をしっかり味わってほしいと思い、みんなが笑顔になれる取り組みに力をいれています。
+                                <br>これからも春寿しは、お客様に喜んでもらうため、お客様が笑顔になれる料理を提供していきます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

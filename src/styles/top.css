@@ -1,0 +1,354 @@
+/*--------------------------------
+	background / decoration
+--------------------------------*/
+
+:is(.recruit, .contact) {
+    position: relative;
+    padding: 64px 0 80px;
+}
+
+.decoration {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    & .decorationImg {
+        display: none;
+        width: 30%;
+        height: auto;
+        position: absolute;
+        @media (min-width: 1024px) {
+            display: block;
+            width: 232px;
+        }
+        &:nth-child(1) {
+            top: 5%;
+            right: 2%;
+        }
+        &:nth-child(2) {
+            bottom: 20%;
+            left: 2%;
+        }
+    }
+    & .decorationImgLarge {
+        display: none;
+        position: absolute;
+        @media (min-width: 1024px) {
+            display: block;
+            width: 25%;
+            top: -100px;
+            right: 0;
+        }
+    }
+}
+
+
+/*--------------------------------
+	layout
+--------------------------------*/
+
+.firstViewTtl {
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    left: 16px;
+    z-index: 2;
+    &::after {
+        content: "";
+        display: block;
+        width: calc(375px / 2);
+        height: calc(368px / 2);
+        border-radius: 50%;
+        background: rgba(217, 217, 217, 0.3);
+        position: absolute;
+        z-index: 1;
+    }
+    @media (min-width: 1024px) {
+        left: 5%;
+        &::after {
+            width: 375px;
+            height: 368px;
+            left: 11%;
+        }
+    }
+}
+
+.firstViewTtlLarge {
+    position: absolute;
+    top: 24px;
+    left: 60px;
+    @media (min-width: 1024px) {
+        top: 56px;
+        left: 16%;
+    }
+}
+
+.mainContent {
+    max-width: 1100px;
+    width: 95%;
+    margin: 80px auto 0;
+    @media (min-width: 768px) {
+        margin: 160px auto 0;
+    }
+    &>.flex {
+        margin-bottom: 56px;
+    }
+    & .txtBox {
+        padding-top: 24px;
+    }
+    @media (min-width: 768px) {
+        & .imgBox {
+            width: 570px;
+        }
+        & .txtBox {
+            padding-top: 48px;
+            width: 495px;
+        }
+        &>.flex {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.news {
+    padding-top: 72px;
+    @media (min-width: 1024px) {
+        padding-top: 100px;
+    }
+}
+
+.newsBox {
+    margin-bottom: 32px;
+    @media (min-width: 1024px) {
+        width: 60%;
+    }
+}
+
+.menuRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 88px 0 64px;
+    row-gap: 32px;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 56px;
+        margin: 130px 0 100px;
+    }
+}
+
+.menuBox {
+    overflow: hidden;
+    position: relative;
+    @media (min-width: 1024px) {
+        width: 484px;
+        &:hover {
+            & .backImg {
+                scale: 1.1 1.1;
+            }
+        }
+    }
+}
+
+.frontTxt {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(225, 225, 225, .7);
+    width: 100%;
+    height: 100%;
+    scale: .8 .8;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+:is(.recruitRow, .accessRow) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        column-gap: 56px;
+    }
+}
+
+.recruitTxtBox {
+    @media (min-width: 768px) {
+        & .txt {
+            width: 100%;
+        }
+    }
+    @media (min-width: 1024px) {
+        width: 50%;
+    }
+}
+
+.recruitImg {
+    position: relative;
+    z-index: 0;
+    margin-top: 80px;
+    @media (min-width: 1024px) {
+        margin-top: 0;
+        width: 475px;
+    }
+}
+
+.recruitImgFront {
+    width: 100%;
+    height: auto;
+}
+
+.recruitImgBack {
+    width: 100%;
+    position: absolute;
+    left: 8px;
+    top: -16px;
+    z-index: -1;
+    @media (min-width: 768px) {
+        left: 16px;
+    }
+}
+
+
+/*--------------------------------
+	font
+--------------------------------*/
+
+.firstViewTtl {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--white-color);
+    font-family: "Noto Serif", serif;
+    letter-spacing: .5rem;
+    @media (min-width: 1024px) {
+        font-size: 4rem;
+    }
+}
+
+.firstViewTtlSmall {
+    font-size: 1.6rem;
+    @media (min-width: 1024px) {
+        font-size: 3.2rem;
+    }
+}
+
+.firstViewTtlLarge {
+    font-size: 3.2rem;
+    @media (min-width: 1024px) {
+        font-size: 7.6rem;
+    }
+}
+
+.mainContentTtl {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    display: block;
+    width: fit-content;
+    letter-spacing: .8rem;
+    @media (min-width: 768px) {
+        font-size: 3.4rem;
+    }
+    &:last-of-type {
+        text-align: left;
+        margin-left: auto;
+    }
+}
+
+.accessTtl {
+    font-size: 2.4rem;
+    letter-spacing: 1.6rem;
+    @media (min-width: 768px) {
+        font-size: 4.8rem;
+    }
+}
+
+:is(.recruitTtl, .newsTtl) {
+    font-size: 2.5rem;
+    margin-bottom: 48px;
+    text-align: center;
+    letter-spacing: .8rem;
+}
+
+:is(.recruit, .contact) {
+    color: var(--white-color);
+}
+
+.recruitTxtBoxTtl {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+    text-align: center;
+    letter-spacing: .2rem;
+    @media (min-width: 768px) {
+        font-size: 2rem;
+    }
+    @media (min-width: 1024px) {
+        font-size: 2.4rem;
+        text-align: left;
+    }
+}
+
+.newsTtl {
+    color: var(--black-color);
+}
+
+.accessItemTxt {
+    letter-spacing: .2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .frontTxt {
+        font-size: 3rem;
+    }
+     :is(.recruitTtl, .newsTtl) {
+        font-size: 5rem;
+    }
+}
+
+
+/*--------------------------------
+	items
+--------------------------------*/
+
+.newsItem {
+    row-gap: 4px;
+    padding: 8px 0;
+    @media (min-width: 1024px) {
+        column-gap: 124px;
+        padding: 24px 0;
+        &.flex {
+            justify-content: flex-start;
+        }
+    }
+    &:not(:last-of-type) {
+        border-bottom: 1px solid #e5e5e5;
+    }
+}
+
+.accessItem {
+    border-bottom: 1px solid #d9d9d9;
+    padding: 8px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 8px;
+    &:last-of-type {
+        margin-bottom: 24px;
+    }
+    @media (min-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.accessItemTtl {
+    max-width: 80px;
+    width: 100%;
+    font-weight: 900;
+}

@@ -1,0 +1,43 @@
+@charset "utf-8";
+.decoration {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    & .decorationImg {
+        display: none;
+        width: 30%;
+        height: auto;
+        position: absolute;
+        @media (min-width: 1024px) {
+            display: block;
+            width: 232px;
+            z-index: -1;
+        }
+        &:nth-child(1) {
+            top: -6%;
+            right: 0;
+        }
+        &:nth-child(2) {
+            bottom: 1%;
+            left: 0;
+        }
+    }
+    & .decorationImgLarge {
+        display: none;
+        position: absolute;
+        @media (min-width: 1024px) {
+            display: block;
+            top: -40px;
+            right: -20px;
+        }
+    }
+}
+
+.section {
+    margin: 42px auto 32px;
+    max-width: 945px;
+    width: 100%;
+    @media (min-width: 768px) {
+        margin: 80px auto 64px;
+    }
+}

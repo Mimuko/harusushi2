@@ -1,0 +1,122 @@
+@charset "utf-8";
+.decoration {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    & .decorationImg {
+        display: none;
+        width: 30%;
+        height: auto;
+        position: absolute;
+        z-index: -1;
+        @media (min-width: 1024px) {
+            display: block;
+            width: 232px;
+        }
+        &:nth-child(1) {
+            top: 0;
+            right: 0;
+        }
+        &:nth-child(2) {
+            bottom: 47%;
+            left: 0;
+        }
+    }
+    & .decorationImgLarge {
+        display: none;
+        position: absolute;
+        @media (min-width: 1024px) {
+            display: block;
+            top: -40px;
+            right: -20px;
+        }
+    }
+}
+
+.section {
+    margin-bottom: 128px;
+    @media (min-width: 768px) {
+        margin-bottom: 256px;
+    }
+}
+
+.bottomLineTtl {
+    font-size: 2.4rem;
+    text-align: center;
+    border-color: #e5e5e5;
+    @media (min-width: 768px) {
+        font-size: 3.6rem;
+        max-width: 644px;
+        width: 100%;
+        margin: 0 auto 32px;
+    }
+}
+
+.txtBoxTtl {
+    font-size: 2rem;
+    margin-bottom: 36px;
+    @media (min-width: 1024px) {
+        font-size: 2.4rem;
+        margin-bottom: 72px;
+    }
+}
+
+.recruitRow.flex {
+    align-items: flex-end;
+    @media (min-width: 768px) {
+        flex-direction: column;
+    }
+    @media (min-width: 1024px) {
+        flex-direction: row;
+    }
+}
+
+.imgContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-top: 90px;
+    margin-bottom: 125px;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        column-gap: 32px;
+        margin-top: 180px;
+        margin-bottom: 250px;
+    }
+    & .img {
+        width: 100%;
+    }
+}
+
+.flexTable {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 24px;
+    @media (min-width: 768px) {
+        max-width: 856px;
+        margin: 0 auto 24px;
+        flex-direction: row;
+        column-gap: 62px;
+        align-items: flex-start;
+    }
+}
+
+.flexTableHead {
+    background: var(--accent-color);
+    color: var(--white-color);
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    @media (min-width: 768px) {
+        padding: 16px 0;
+        max-width: 173px;
+    }
+}
+
+.flexTableBody.middle {
+    align-self: center;
+}
